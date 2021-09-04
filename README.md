@@ -1,2 +1,19 @@
 # BastionGO
-testea tus endpoint privados desde una funcion lambda en go
+# Testea tus endpoint privados desde una funcion lambda en go
+
+## build
+```sh
+go mod init lambdacurl
+go mod tidy
+go build main.go
+zip main.zip main
+```
+
+## test data
+```sh
+{
+  "Url": "https://httpbin.org/post",
+  "Method": "POST",
+  "Payload": "`{ 'hola': 'hola'}"
+}
+```
