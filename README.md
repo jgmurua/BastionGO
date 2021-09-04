@@ -3,7 +3,7 @@
 
 ## build
 ```sh
-go mod init lambdacurl
+go mod init BastionGO
 go mod tidy
 go build main.go
 zip main.zip main
